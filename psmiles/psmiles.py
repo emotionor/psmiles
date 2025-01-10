@@ -278,7 +278,7 @@ class PolymerSmiles:
         Returns:
             PolymerSmiles: canonicalized PSMILES string
         """
-        return PolymerSmiles(ext_canonicalize(self.psmiles))
+        return PolymerSmiles(ext_canonicalize(self.psmiles), deactivate_warnings=True)
 
     @property
     def inchi(self) -> str:
